@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数返回值</title>
+</head>
+<body>
+    <script>
+        function 削水果(水果的名字 = "土豆",去皮次数 = 10,大小块 = "小块"){
+            var str = 水果的名字;
+            document.write("洗"+水果的名字+"<br>");
+            for (var i = 0; i < 去皮次数; i++) {
+                document.write("去皮"+(i+1)+"<br>");
+            }
+            document.write("切"+大小块+"<br>");
+            document.write("插上牙签"+"<br>");
+            str = "一碟" + 大小块 + "的" + str;
+            return str;
+        }
+        var tt = 0;
+        tt = 削水果("苹果",2);
+        document.write("<br>" + "tt拿到了：" + tt + "<br>");
+    </script>
+</body>
+</html>
